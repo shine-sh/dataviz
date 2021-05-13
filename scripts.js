@@ -36,7 +36,6 @@ getData(dataSourceUrl).then(function (data) {
                     data: moonCounts,
                     borderWidth: 3,
                     bordercolor: '#ff00ff'
-                    borderDash: [10],
                 }
             ]
         },
