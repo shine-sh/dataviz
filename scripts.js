@@ -9,6 +9,7 @@ async function getData(url) {
 
 getData(dataSourceUrl).then(function (data) {
     var bodies = data.bodies;
+
     var bodiesWithMoons = bodies.filter (function(body) {
         return body.moons
     });
@@ -19,25 +20,25 @@ getData(dataSourceUrl).then(function (data) {
 
     var bodyNames = bodiesWithMoons.map(function (body) {
         return body.englishName;
-    })
+    });
     var moonCounts = bodiesWithMoons.map(function (body) {
         return body.moons.length;
     });
 
-    console.log(Chart);
     var ctx = document.getElementById('chart-1').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: bodyNames,
-            datasets: [{
-                label: '# of Moons',
-                data: moonCounts,
-                borderWidth: 3,
-                bordercolor: '#ff00ff'
-                borderDash: [10],
-
-            }]
+            datasets: [
+                {
+                    label: '# of Moons',
+                    data: moonCounts,
+                    borderWidth: 3,
+                    bordercolor: '#ff00ff'
+                    borderDash: [10],
+                }
+            ]
         },
         options: {
             scales: {
