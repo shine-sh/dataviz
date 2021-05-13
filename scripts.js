@@ -26,7 +26,7 @@ getData(dataSourceUrl).then(function (data) {
     });
 
     var ctx = document.getElementById('chart-1').getContext('2d');
-    var myChart = Chart1 (ctx, {
+    var myChart = 2d (ctx, {
         type: "line",
         data: {
             labels: bodyNames,
