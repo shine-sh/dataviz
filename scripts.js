@@ -26,16 +26,16 @@ getData(dataSourceUrl).then(function (data) {
     });
 
     var ctx = document.getElementById('chart-1').getContext('2d');
-    var myChart = new myChart(ctx, {
-        type: 'line',
+    var myChart = Chart(ctx, {
+        type: "line",
         data: {
             labels: bodyNames,
             datasets: [
                 {
-                    label: '# of Moons',
+                    label: "# of Moons",
                     data: moonCounts,
                     borderWidth: 3,
-                    bordercolor: '#ff00ff',
+                    bordercolor: "#ff00ff",
                 }
             ]
         },
