@@ -25,8 +25,8 @@ getData(dataSourceUrl).then(function (data) {
         return body.moons.length;
     });
 
-    var ctx = document.getElementById('chart-1').getContext('2d');
-    var myChart = chart-1 (ctx, {
+    var ctx = document.getElementById('chart1').getContext('2d');
+    var myChart = chart1 (ctx, {
         type: "line",
         data: {
             labels: bodyNames,
