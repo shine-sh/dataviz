@@ -35,7 +35,7 @@ getData(dataSourceUrl).then(function (data) {
                     label: '# of Moons',
                     data: moonCounts,
                     borderWidth: 3,
-                    bordercolor: '#ff00ff'
+                    bordercolor: '#ff00ff',
                 }
             ]
         },
@@ -43,7 +43,7 @@ getData(dataSourceUrl).then(function (data) {
             scales: {
                 y: {
                     beginAtZero: true,
-                    min: 0;
+                    min: 0,
                     max: 100,
                 },
             },
