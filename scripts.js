@@ -52,29 +52,29 @@
 // });
 var bodies = [
     {
-      name: "body-1",
+      name: "Instagram",
+      width: 20,
+      color: "#FFAEA5",
+    },
+    {
+      name: "TikTok",
+      width: 15,
+      color: "#D4F0F0",
+    },
+    {
+      name: "Youtube",
+      width: 12,
+      color: "#FFFFB5",
+    },
+    {
+      name: "Vkontakte",
       width: 10,
-      color: "red",
+      color: "#CCE2CB",
     },
     {
-      name: "body-2",
-      width: 5,
-      color: "magenta",
-    },
-    {
-      name: "body-mini",
-      width: 1,
-      color: "grey",
-    },
-    {
-      name: "body-4",
-      width: 13,
-      color: "green",
-    },
-    {
-      name: "body-extra",
-      width: 10,
-      color: "blue",
+      name: "Facebook",
+      width: 6,
+      color: "#ECD5E3",
     },
   ];
   
